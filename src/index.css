@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+         
+body{
+  @apply bg-[#fef6e4] text-gray-800 font-inter;
+}
+   
+  
