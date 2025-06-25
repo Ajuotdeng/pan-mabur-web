@@ -7,6 +7,8 @@ import About from './components/About';
 import Blogs from './components/Blogs';
 import Contact from './components/Contact';
 import Hero from './components/Hero';
+import ScrollToTop from './components/ScrollToTop';
+
 import './index.css';
 
 function Layout() {
@@ -15,6 +17,7 @@ function Layout() {
   return (
     <div className="bg-[#fef6e4] min-h-screen font-sans">
       <Navbar />
+      <ScrollToTop />
 
       
       {location.pathname === '/' && <Hero />}

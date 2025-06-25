@@ -1,19 +1,24 @@
 import React from 'react';
-import dukImage from '../assets/Duk.jpg'; 
+import dukImage from '../assets/Duk.jpg';
 
 export default function Hero() {
   return (
-    <section className="pt-24 pb-16 text-center bg-white sm:pt-32 sm:pb-20">
-      <div className="container mx-auto">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Pan Mabur Community</h1>
-        <p className="mb-6 text-lg text-gray-700">
-          Celebrating heritage, leadership, and unity in Duk, Jonglei State, South Sudan.
+    <section
+      className="relative min-h-[80vh] flex items-center justify-center text-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${dukImage})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 z-0 bg-black bg-opacity-50" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-4xl px-6">
+        <h1 className="text-4xl font-bold text-white md:text-5xl drop-shadow-lg">
+          Welcome to Pan Mabur
+        </h1>
+        <p className="mt-4 text-lg leading-relaxed text-gray-200 md:text-xl">
+          Rooted in the heart of <strong>Duk, Jonglei State</strong>, Pan Mabur is a proud Dinka (Hol) community preserving
+          generations of leadership, cultural pride, and unity. This is more than a heritage—it’s a living legacy.
         </p>
-        <img
-          src={dukImage}
-          alt="Duk County"
-          className="w-full max-w-4xl mx-auto shadow-lg rounded-xl"
-        />
       </div>
     </section>
   );
