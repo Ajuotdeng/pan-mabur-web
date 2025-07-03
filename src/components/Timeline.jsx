@@ -2,6 +2,7 @@ import React from 'react';
 import TimelineItem from './TimelineItem';
 
 
+
 const timelineData = [
   {
     image: "/images/Padiet.jpg", 
