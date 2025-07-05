@@ -24,7 +24,7 @@ const About = () => (
 
     <Section title="Cultural Practices & Norms">
       <p>
-        We uphold the rich cultural norms of the Jieng, centered around cattle keeping, mutual respect, trust, and hygiene. Among the most celebrated elements of our tradition is the Dinka dance, especially as performed in Duk, Jonglei State. This dance is more than movement—it is a cultural heartbeat.
+        We uphold the rich cultural norms of the Jieng, centered around cattle keeping, mutual respect, trust, and dignity. Among the most celebrated elements of our tradition is the Dinka dance, especially as performed in Duk, Jonglei State. This dance is more than movement—it is a cultural heartbeat.
       </p>
       <p>
         The Dinka dance is slow, deliberate, and rhythmic, often featuring a unique up-and-down motion from the knees, creating a wave-like flow through the body. One of the most iconic aspects is the hand gesture that mimics the <i><strong>horns of a bull</strong></i>—a powerful symbol of our connection to cattle, which are central to our identity and status. Dancers move with grace and pride, their bodies speaking a language older than memory, often synchronized with the deep beating of traditional drums.

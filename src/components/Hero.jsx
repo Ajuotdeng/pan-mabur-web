@@ -58,7 +58,6 @@ export default function Hero() {
           Preserving the stories, traditions, and leadership of a people
         </motion.p>
 
-        {/* Link to About Page */}
         <Link to="/about">
           <motion.button
             whileHover={{ scale: 1.05 }}
