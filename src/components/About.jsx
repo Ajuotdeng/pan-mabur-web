@@ -6,7 +6,7 @@ import maburImage from '../assets/family2.jpg';
 const About = () => (
   <div className="max-w-4xl px-4 py-8 mx-auto">
     <Section title="Pan Mabur Origin">
-      <div className="bg-[#fef6e4] min-h-screen px-4 py-10">
+      <div className="min-h-screen px-4 py-10">
         <h2 className="mb-8 text-3xl font-bold leading-relaxed text-center text-blue-800 md:text-4xl font-inter">
           Pan Mabur: A Legacy of Kinship
         </h2>
