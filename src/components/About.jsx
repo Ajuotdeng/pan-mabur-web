@@ -6,14 +6,14 @@ import maburImage from '../assets/family2.jpg';
 const About = () => (
   <div className="max-w-4xl px-4 py-8 mx-auto">
     <Section title="Pan Mabur Origin">
-      <div className="min-h-screen px-4 py-10">
+      <div className="min-h-screen py-10 px-14">
         <h2 className="mb-8 text-3xl font-bold leading-relaxed text-center text-blue-800 md:text-4xl font-inter">
           Pan Mabur: A Legacy of Kinship
         </h2>
         <img
           src={maburImage}
           alt="Pan Mabur family"
-          className="w-full max-w-4xl mx-auto shadow-lg rounded-xl"
+          className="object-contain w-full h-auto max-w-4xl shadow-lg rounded-xl"
         />
         <p className="mt-6">
           The Pan Mabur community traces its origins to the expansive plains of Duk County in Jonglei State, South Sudan. Historically part of the larger Jieng (Dinka) ethnic group, the Pan Mabur Ajuot people were traditionally semi-nomadic pastoralists, deeply rooted in cattle keeping and communal life. Oral history tells of their migration across the Nile valleys in search of greener pastures, a journey shaped by resilience, survival, and unity.
@@ -32,7 +32,7 @@ const About = () => (
       <img
         src={dukImage}
         alt="cattle"
-        className="w-full max-w-4xl mx-auto shadow-lg rounded-xl"
+        className="object-contain w-full h-auto max-w-4xl shadow-lg rounded-xl"
       />
     </Section>
 

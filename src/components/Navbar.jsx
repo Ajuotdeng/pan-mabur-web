@@ -7,10 +7,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#e3caa5] shadow-md border-b-2 border-[#ffc34d] py-4 px-3">
+    <nav className="bg-[#e3caa5] shadow-md border-b-2 border-[#ffc34d] px-4 py-3">
       <div className="container flex items-center justify-between mx-auto">
         {/* Brand */}
-        <Link to="/" className="flex items-center space-x-2 text-2xl font-bold text-blue-900 font-poppins">
+        <Link to="/" className="flex items-center py-2 space-x-2 text-2xl font-bold text-blue-900 font-poppins">
           <img src={panmaburLogo} alt="Pan Mabur logo" className="w-8 h-8" />
           <span>Pan Mabur</span>
         </Link>
