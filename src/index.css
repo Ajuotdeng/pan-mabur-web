@@ -3,7 +3,7 @@
 @tailwind utilities;
          
 body{
-  @apply bg-[#fef6e4] text-gray-800 font-inter;
+  @apply bg-[#fffdf0] text-gray-800 font-inter;
 }
    
   

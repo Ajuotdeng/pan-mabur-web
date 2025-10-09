@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Blogs() {
   return (
-    <div className="min-h-screen p-8 bg-gray-50">
+    <div className="min-h-screen p-8 px-2 py-1 bg-gray-50">
       <h2 className="mb-8 text-3xl font-bold text-center text-blue-800">Pan Mabur Blog Archive</h2>
       <div className="grid gap-6 md:grid-cols-3">
         {blogs.map(blog => (

@@ -13,13 +13,14 @@ import BlogDetails from './components/BlogDetails';
 
 
 
+
 import './index.css';
 
 function Layout() {
   const location = useLocation();
 
   return (
-    <div className="bg-[#fef6e4] min-h-screen font-sans">
+      <div className="font-sans"> 
       <Navbar />
       <ScrollToTop />
 
