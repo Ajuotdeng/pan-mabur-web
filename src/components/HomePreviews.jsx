@@ -37,4 +37,4 @@ const HomePreviews = () => {
     );
 };
 
-export default HomePreviews;
+export default HomePreviews; 

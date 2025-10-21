@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => (
   <div className="max-w-2xl px-4 py-8 mx-auto">
-    <h2 className="mb-4 text-3xl font-semibold text-indigo-700">Contact Us</h2>
+    <h2 className="flex items-center justify-center mb-4 text-3xl font-semibold text-indigo-700">Contact Us</h2>
     <form className="flex flex-col space-y-4">
       <input
         type="text"
