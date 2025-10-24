@@ -26,12 +26,10 @@ export default function Home() {
 
         <p className="mt-6 text-lg leading-relaxed text-gray-700">
           We celebrate who we are through the beats of the drum, the symbolism of cattle, and the rich ties built with neighboring communities.
-          This is more than a heritage—it’s a legacy in motion. <strong>Welcome home to Pan Mabur.</strong>
+          This is more than a heritage—it’s a legacy in motion. 
         </p>
-        <div>
-      <h1 className="mb-4 font-serif text-3xl text-panEarth">Pan Mabur Digital Archive</h1>
-      <p className="mb-4">A living record of the people, leaders, and culture. This starter site is intentionally simple. Add content through the admin dashboard.</p>
-    </div>
+
+         
 
         <HomePreviews />
       </section>

@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import Hero from './components/Hero';
 import ScrollToTop from './components/ScrollToTop';
 import BlogDetails from './components/BlogDetails';
-import Leadership from './components/pages/Leadership';
+import FamilyTree from './components/pages/FamilyTree';
 
 
 import './index.css';
@@ -32,7 +32,7 @@ function Layout() {
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails />} />
-          <Route path="/leadership" element={<Leadership />} />
+          <Route path="/familytree" element={<FamilyTree />} />
           <Route path="/contact" element={<Contact />} />
           
         </Routes>

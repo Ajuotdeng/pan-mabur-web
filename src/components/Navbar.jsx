@@ -26,7 +26,7 @@ export default function Navbar() {
         {/* Navigation Links */}
         <nav className={`md:flex md:space-x-8 text-base font-inter text-gray-800 ${isOpen ? 'block mt-4' : 'hidden'} md:block`}>
           <Link to="/" className="block hover:text-[#c45a2a]">Home</Link>
-          <Link to="/leadership" className="block hover:text-[#c45a2a]">Leadership</Link>
+          <Link to="/familytree" className="block hover:text-[#c45a2a]">FamilyTree</Link>
           <Link to="/blogs" className="block hover:text-[#c45a2a]">Blogs</Link>
           <Link to="/contact" className="block hover:text-[#c45a2a]">Contact</Link>
           
@@ -35,3 +35,4 @@ export default function Navbar() {
     </header>
   );
 }
+
