@@ -2,19 +2,17 @@ import React, { useRef, useState, useEffect } from "react";
 import Tree from "react-d3-tree";
 import { Link } from "react-router-dom";
 
-export default function AwanMaburTree() {
+export default function NgorMaburTree() {
   const treeRef = useRef(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
 
   const data = {
-    name: "Awan Mabur",
+    name: "Ngor Mabur",
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
-      { name: "Makim Awan" },
-      { name: "Abiel Awan" },
-      { name: "Kuol Awan" },
-      { name: "Chol Awan" },
-      { name: "Nyandeng Awan" },
+      { name: "Tong Ngor" },
+      { name: "Nyatap Ngor" },
+     
     ],
   };
 
@@ -32,15 +30,15 @@ export default function AwanMaburTree() {
         <Link to="/familytree" className="text-green-700 hover:underline">
           ← Back
         </Link>{" "}
-        › Awan Mabur Lineage
+        › Ngor Mabur Lineage
       </div>
 
       <div className="max-w-5xl mx-auto mb-6 text-center">
         <h1 className="text-3xl md:text-4xl font-bold text-green-700">
-          Descendants of Awan Mabur
+          Descendants of Ngor Mabur
         </h1>
         <p className="text-gray-600 mt-2 text-sm md:text-base">
-          Visual representation of Awan Mabur’s lineage.
+          Visual representation of Ngor Mabur’s lineage.
         </p>
       </div>
 

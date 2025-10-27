@@ -14,6 +14,14 @@ import MalualMaburTree from "./components/FamilyTree/MalualMaburTree";
 import DengMaburTree from "./components/FamilyTree/DengMaburTree";
 import MathiangMaburTree from "./components/FamilyTree/MathiangMaburTree";
 import BayakMaburTree from "./components/FamilyTree/BayakMaburTree";
+import AkuolMaburTree from "./components/FamilyTree/AkuolMaburTree";
+import AwanditMaburTree from "./components/FamilyTree/AwanditMaburTree";
+import AwanMaburTree from "./components/FamilyTree/AwanMaburTree";
+import BolMaburTree from "./components/FamilyTree/BolMaburTree";
+import MonykuerMaburTree from "./components/FamilyTree/MonykuerMaburTree";
+import NgorMaburTree from "./components/FamilyTree/NgorMaburTree";
+import RueiMaburTree from "./components/FamilyTree/RueiMaburTree";
+import NyaweiMaburTree from "./components/FamilyTree/NyaweiMaburTree";
 
 import './index.css';
 
@@ -40,6 +48,14 @@ function Layout() {
           <Route path="/familytree/mathiang-mabur" element={<MathiangMaburTree />} />
           <Route path="/familytree/bayak-mabur" element={<BayakMaburTree />} />
           <Route path="/familytree/deng-mabur" element={<DengMaburTree />} />
+          <Route path="/familytree/bol-mabur" element={<BolMaburTree />} />
+          <Route path="/familytree/akuol-mabur" element={<AkuolMaburTree />} />
+          <Route path="/familytree/awandit-mabur" element={<AwanditMaburTree />} />
+          <Route path="/familytree/awan-mabur" element={<AwanMaburTree />} />
+          <Route path="/familytree/monykuer-mabur" element={<MonykuerMaburTree />} />
+          <Route path="/familytree/ngor-mabur" element={<NgorMaburTree />} />
+          <Route path="/familytree/ruei-mabur" element={<RueiMaburTree />} />
+          <Route path="/familytree/nyawei-mabur" element={<NyaweiMaburTree />} />
 
           <Route path="/contact" element={<Contact />} />
         </Routes>
