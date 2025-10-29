@@ -41,29 +41,42 @@ export default function MalualMaburTree() {
         name: "Mawut Malual",
         attributes: { title: "Grandson" },
         children: [
-          { name: "Nyabel Mawut", attributes: { title: "Great Granddaughter" } },
-          { name: "Akol Mawut", attributes: { title: "Great Grandson" } },
-          { name: "Malual Mawut", attributes: { title: "Great Grandson" } },
-          { name: "Awak Mawut", attributes: { title: "Great Granddaughter" } },
-          { name: "Deng Mawut", attributes: { title: "Great Grandson" } },
-          { name: "Tong Mawut", attributes: { title: "Great Grandson" } },
-          { name: "Nyanlou Mawut", attributes: { title: "Great Granddaughter" } },
-          { name: "Nyandiit Mawut", attributes: { title: "Great Granddaughter" } },
-          { name: "Mabior Mawut", attributes: { title: "Great Grandson" } },
-          { name: "Mabur Mawut", attributes: { title: "Great Grandson" } },
+          {
+            name: "Nyaluak Mawut",
+            attributes: { title: "Wife of Mawut Malual" },
+            children: [
+              { name: "Nyabel Mawut", attributes: { title: "Great Granddaughter" } },
+              { name: "Akol Mawut", attributes: { title: "Great Grandson" } },
+              { name: "Malual Mawut", attributes: { title: "Great Grandson" } },
+              { name: "Awak Mawut", attributes: { title: "Great Granddaughter" } },
+              { name: "Deng Mawut", attributes: { title: "Great Grandson" } },
+              { name: "Tong Mawut", attributes: { title: "Great Grandson" } },
+              { name: "Nyanlou Mawut", attributes: { title: "Great Granddaughter" } },
+              { name: "Nyandiit Mawut", attributes: { title: "Great Granddaughter" } },
+              { name: "Mabior Mawut", attributes: { title: "Great Grandson" } },
+              { name: "Mabur Mawut", attributes: { title: "Great Grandson" } },
+            ],
+          },
         ],
       },
       {
         name: "Chol Malual",
         attributes: { title: "Grandson" },
         children: [
+          {
+            name: "Atong Alak",
+            attributes: { title: "Wife of Chol Malual" },
+            children: [
+              { name: "Athiei Chol", attributes: { title: "Great Grandson" } },
+              { name: "Mabur Chol", attributes: { title: "Great Grandson" } },
+            ],
+          },
+          // Optional: other children not by Atong, if any
           { name: "Awak Chol", attributes: { title: "Great Granddaughter" } },
           { name: "Malual Chol", attributes: { title: "Great Grandson" } },
           { name: "Ajok Chol", attributes: { title: "Great Grandson" } },
           { name: "Nyantet Chol", attributes: { title: "Great Granddaughter" } },
           { name: "Nyabel Chol", attributes: { title: "Great Granddaughter" } },
-          { name: "Athiei Chol", attributes: { title: "Great Grandson" } },
-          { name: "Mabur Chol", attributes: { title: "Great Grandson" } },
           { name: "Sarah Chol", attributes: { title: "Great Granddaughter" } },
           { name: "Adau Chol", attributes: { title: "Great Granddaughter" } },
           { name: "Deng Chol", attributes: { title: "Great Grandson" } },
@@ -88,7 +101,7 @@ export default function MalualMaburTree() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-10 flex flex-col items-center">
+    <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       {/* Breadcrumb */}
       <div className="w-full max-w-5xl mb-4 text-sm text-gray-600">
         <Link to="/" className="text-green-700 hover:underline">
@@ -99,10 +112,10 @@ export default function MalualMaburTree() {
 
       {/* Title */}
       <div className="max-w-5xl mx-auto mb-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-green-700">
+        <h1 className="text-3xl font-bold text-green-700 md:text-4xl">
           Descendants of Malual Mabur
         </h1>
-        <p className="text-gray-600 mt-2 text-sm md:text-base">
+        <p className="mt-2 text-sm text-gray-600 md:text-base">
           Visual representation of Malual Mabur’s lineage.
         </p>
       </div>
@@ -144,7 +157,7 @@ export default function MalualMaburTree() {
       <div className="mt-6">
         <Link
           to="/"
-          className="inline-block px-5 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition"
+          className="inline-block px-5 py-2 text-white bg-green-700 rounded-md hover:bg-green-800 transition"
         >
           ← Back to Main Lineage
         </Link>
