@@ -15,7 +15,31 @@ export default function BayakMaburTree() {
         children: [
           { name: "Mawut Chol" },
           { name: "Bayak Chol" },
+          { name: "Nyanluak Chol" },
+          { name: "Mabur Chol" },
+          { name: "Ajuot Chol" },
         ],
+      },
+
+      {
+        name: "Kach Bayak",
+        children: [
+          { name: "Nyantet Kach" },
+          { name: "Marial Kach" },
+          { name: "Mabur Kach" },
+          { name: "Bayak Kach" },
+          { name: "Akol Kach" },
+        ],
+      },
+
+      {
+        name: "Yar Bayak",
+        children: [],
+      },
+
+      {
+        name: "Mabur Bayak",
+        children: [],
       },
     ],
   };
@@ -63,11 +87,19 @@ export default function BayakMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },

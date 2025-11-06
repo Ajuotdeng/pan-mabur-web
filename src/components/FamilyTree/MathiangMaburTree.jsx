@@ -11,8 +11,9 @@ export default function MathiangMaburTree() {
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
       { name: "Deng Mathiang" },
+      { name: "Akol Mathiang" },
+      { name: "Yar Mathiang" },
       { name: "Dau Mathiang" },
-      { name: "Kong Mathiang" },
       { name: "Tong Mathiang" },
     ],
   };
@@ -60,11 +61,19 @@ export default function MathiangMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },
