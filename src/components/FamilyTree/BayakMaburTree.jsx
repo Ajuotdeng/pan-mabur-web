@@ -11,6 +11,11 @@ export default function BayakMaburTree() {
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
       {
+        name: "Yar Bayak",
+        children: [{ name: "Marial Yar" }, { name: "Chol Yar" }],
+      },
+
+      {
         name: "Chol Bayak",
         children: [
           { name: "Mawut Chol" },
@@ -33,8 +38,8 @@ export default function BayakMaburTree() {
       },
 
       {
-        name: "Yar Bayak",
-        children: [],
+        name: "Akuol Bayak",
+        children: [{ name: "Adhieu Akuol" }],
       },
 
       {

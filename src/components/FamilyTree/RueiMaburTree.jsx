@@ -10,10 +10,12 @@ export default function RueiMaburTree() {
     name: "Ruei Mabur",
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
-      { name: "Ajuot Ruei" },
-      { name: "Mabur Ruei" },
-     
-    
+      { name: "Achot Ruei", attributes: { title: "Great Granddaughter" } },
+      { name: "Ajok Ruei", attributes: { title: "Great Granddaughter" } },
+      { name: "Nyantet Ruei", attributes: { title: "Great Granddaughter" } },
+      { name: "Nyanwut Ruei", attributes: { title: "Great Granddaughter" } },
+      { name: "Deng Ruei", attributes: { title: "Great Grandson" } },
+      { name: "Ajuot Ruei", attributes: { title: "Great Grandson" } },
     ],
   };
 
@@ -60,11 +62,19 @@ export default function RueiMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },

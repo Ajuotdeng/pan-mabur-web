@@ -10,7 +10,7 @@ export default function NyaweiMaburTree() {
     name: "Nyawei Mabur",
     attributes: { title: "Daughter of Mabur Ajuot" },
     children: [
-      { name: "..." },
+      { name: "Ater Nyawei" },
       { name: "..." },
       { name: "...." },
    
