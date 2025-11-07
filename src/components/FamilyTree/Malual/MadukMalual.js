@@ -10,7 +10,7 @@ const data = {
       name: "Abeny Awan Kuol ",
       attributes: { title: "Wife of Maduk Malual" },
       children: [
-        { name: "Nyantet Maduk", attributes: { title: "Great Grandson" } },
+        { name: "Nyantet Maduk", attributes: { title: "Great Granddaughter" } },
         { name: "Deng Maduk", attributes: { title: "Great Grandson" } },
         { name: "Awak Maduk", attributes: { title: "Great Granddaughter" } },
       ],

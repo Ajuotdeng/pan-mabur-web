@@ -1,5 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -24,12 +29,13 @@ import NgorMaburTree from "./components/FamilyTree/NgorMaburTree";
 import RueiMaburTree from "./components/FamilyTree/RueiMaburTree";
 import NyaweiMaburTree from "./components/FamilyTree/NyaweiMaburTree";
 
-// Malual Mabur tree and his sons
-import MalualMaburMain from "./components/FamilyTree/Malual"; 
+// Malual Mabur tree and his sons and daughters
+import MalualMaburMain from "./components/FamilyTree/Malual";
 import MaburMalual from "./components/FamilyTree/Malual/MaburMalual";
 import MathiangMalual from "./components/FamilyTree/Malual/MathiangMalual";
 import MawutMalual from "./components/FamilyTree/Malual/MawutMalual";
 import CholMalual from "./components/FamilyTree/Malual/CholMalual";
+import MadukMalual from "./components/FamilyTree/Malual/MadukMalual";
 import MagotMalual from "./components/FamilyTree/Malual/MagotMalual";
 import DengMalual from "./components/FamilyTree/Malual/DengMalual";
 import AkoiMalual from "./components/FamilyTree/Malual/AkoiMalual";
@@ -58,27 +64,67 @@ function Layout() {
           <Route path="/familytree" element={<RootTree />} />
 
           {/* Main family branches under Mabur Ajuot */}
-          <Route path="/familytree/mathiang-mabur" element={<MathiangMaburTree />} />
+          <Route
+            path="/familytree/mathiang-mabur"
+            element={<MathiangMaburTree />}
+          />
           <Route path="/familytree/bayak-mabur" element={<BayakMaburTree />} />
           <Route path="/familytree/deng-mabur" element={<DengMaburTree />} />
           <Route path="/familytree/bol-mabur" element={<BolMaburTree />} />
           <Route path="/familytree/akuol-mabur" element={<AkuolMaburTree />} />
-          <Route path="/familytree/awandit-mabur" element={<AwanditMaburTree />} />
+          <Route
+            path="/familytree/awandit-mabur"
+            element={<AwanditMaburTree />}
+          />
           <Route path="/familytree/awan-mabur" element={<AwanMaburTree />} />
-          <Route path="/familytree/monykuer-mabur" element={<MonykuerMaburTree />} />
+          <Route
+            path="/familytree/monykuer-mabur"
+            element={<MonykuerMaburTree />}
+          />
           <Route path="/familytree/ngor-mabur" element={<NgorMaburTree />} />
           <Route path="/familytree/ruei-mabur" element={<RueiMaburTree />} />
-          <Route path="/familytree/nyawei-mabur" element={<NyaweiMaburTree />} />
+          <Route
+            path="/familytree/nyawei-mabur"
+            element={<NyaweiMaburTree />}
+          />
 
           {/* Malual Mabur and his descendants */}
-          <Route path="/familytree/malual-mabur" element={<MalualMaburMain />} />
-          <Route path="/familytree/malual-mabur/mabur-malual" element={<MaburMalual />} />
-          <Route path="/familytree/malual-mabur/mathiang-malual" element={<MathiangMalual />} />
-          <Route path="/familytree/malual-mabur/mawut-malual" element={<MawutMalual />} />
-          <Route path="/familytree/malual-mabur/chol-malual" element={<CholMalual />} />
-          <Route path="/familytree/malual-mabur/magot-malual" element={<MagotMalual />} />
-          <Route path="/familytree/malual-mabur/deng-malual" element={<DengMalual />} />
-          <Route path="/familytree/malual-mabur/akoi-malual" element={<AkoiMalual />} />
+          <Route
+            path="/familytree/malual-mabur"
+            element={<MalualMaburMain />}
+          />
+          <Route
+            path="/familytree/malual-mabur/mabur-malual"
+            element={<MaburMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/mathiang-malual"
+            element={<MathiangMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/mawut-malual"
+            element={<MawutMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/chol-malual"
+            element={<CholMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/maduk-malual"
+            element={<MadukMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/magot-malual"
+            element={<MagotMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/deng-malual"
+            element={<DengMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/akoi-malual"
+            element={<AkoiMalual />}
+          />
 
           {/* Fallback */}
           <Route path="*" element={<Home />} />

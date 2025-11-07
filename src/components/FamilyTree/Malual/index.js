@@ -7,6 +7,7 @@ export default function MalualMaburMain() {
     { name: "Mathiang Malual", path: "mathiang-malual" },
     { name: "Mawut Malual", path: "mawut-malual" },
     { name: "Chol Malual", path: "chol-malual" },
+    { name: "Maduk Malual", path: "maduk-malual" },
     { name: "Deng Malual", path: "deng-malual" },
     { name: "Magot Malual", path: "magot-malual" },
     { name: "Akoi Malual", path: "akoi-malual" },
@@ -19,7 +20,8 @@ export default function MalualMaburMain() {
           Descendants of Malual Mabur
         </h1>
         <p className="text-gray-600 mb-8 text-sm md:text-base">
-          Explore the family branches of Malual Mabur below to view their descendants.
+          Explore the family branches of Malual Mabur below to view their
+          descendants.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
