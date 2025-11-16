@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Link } from 'react-router-dom'; 
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
-
-
-import padiet from '../assets/Padiet.jpg';
-import duk from '../assets/Duk.jpg';
+import padiet from "../assets/Padiet.jpg";
+import duk from "../assets/Duk.jpg";
 
 const images = [padiet, duk];
 

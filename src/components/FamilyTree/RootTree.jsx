@@ -18,26 +18,29 @@ export default function RootTree() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4">
+    <div className="flex flex-col items-center min-h-screen px-4 py-12 bg-gray-50">
       <div className="max-w-3xl text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-green-700 mb-4">
+        <h1 className="mb-4 font-serif text-4xl font-bold text-green-700 md:text-5xl">
           Lineage of Mabur Ajuot
         </h1>
-        <p className="text-gray-600 mb-8 text-sm md:text-base">
-          Explore each family branch below to learn about the descendants of Mabur Ajuot.
+        <p className="mb-8 font-serif text-sm text-gray-600 md:text-base">
+          Explore each family branch below to learn about the descendants of
+          Mabur Ajuot.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
           {branches.map((branch) => (
             <Link
               key={branch.name}
-              to={`/familytree/${branch.path}`} 
-              className="block p-6 bg-white rounded-lg shadow hover:shadow-lg border border-gray-200 transition-transform transform hover:-translate-y-1"
+              to={`/familytree/${branch.path}`}
+              className="block p-6 font-serif transition-transform transform bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg hover:-translate-y-1"
             >
-              <h2 className="text-xl font-semibold text-green-800">
+              <h2 className="font-serif text-xl font-semibold text-green-800">
                 {branch.name}
               </h2>
-              <p className="text-gray-500 mt-2 text-sm">View this lineage</p>
+              <p className="mt-2 font-serif text-sm text-gray-500">
+                View this lineage
+              </p>
             </Link>
           ))}
         </div>

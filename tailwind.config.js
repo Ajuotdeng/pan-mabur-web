@@ -5,12 +5,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['inter', 'sans-serif'],
-         poppins: ['Poppins', 'sans-serif'],
+        serif: ['"Merriweather"', "Georgia", "serif"],
+        sans: ['"Inter"', "Arial", "sans-serif"], //optional fallback
+      },
+      colors: {
+        beige: "#e8e5dc",
+        darktext: "#2b2b2b",
       },
     },
-    },
-  
+  },
+
   plugins: [],
-  
 };

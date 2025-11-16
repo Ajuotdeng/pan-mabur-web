@@ -28,19 +28,22 @@ export default function RueiMaburTree() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-10 flex flex-col items-center">
-      <div className="w-full max-w-5xl mb-4 text-sm text-gray-600">
-        <Link to="/familytree" className="text-green-700 hover:underline">
+    <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
+      <div className="w-full max-w-5xl mb-4 font-serif text-sm text-gray-600">
+        <Link
+          to="/familytree"
+          className="font-serif text-green-700 hover:underline"
+        >
           ← Back
         </Link>{" "}
         › Ruei Mabur Lineage
       </div>
 
       <div className="max-w-5xl mx-auto mb-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-green-700">
+        <h1 className="font-serif text-3xl font-bold text-green-700 md:text-4xl">
           Descendants of Ruei Mabur
         </h1>
-        <p className="text-gray-600 mt-2 text-sm md:text-base">
+        <p className="mt-2 font-serif text-sm text-gray-600 md:text-base">
           Visual representation of Ruei Mabur’s lineage.
         </p>
       </div>

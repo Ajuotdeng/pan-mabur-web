@@ -18,6 +18,9 @@ export default function MalualMaburTree() {
         <Link to="/malual/mawut-malual" className="text-green-700 hover:underline">
           Mawut Malual
         </Link>
+        <Link to="/malual/adau-malual" className="text-green-700 hover:underline">
+          Adau Malual
+        </Link>
         <Link to="/malual/chol-malual" className="text-green-700 hover:underline">
           Chol Malual
         </Link>

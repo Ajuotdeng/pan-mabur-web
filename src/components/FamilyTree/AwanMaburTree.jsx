@@ -15,7 +15,7 @@ export default function AwanMaburTree() {
      
     
     ],
-  }; 
+  };  
 
   useEffect(() => {
     if (treeRef.current) {

@@ -1,20 +1,20 @@
-import React from 'react';
-import TimelineItem from './TimelineItem';
-
-
+import React from "react";
+import TimelineItem from "./TimelineItem";
 
 const timelineData = [
   {
-    image: "/images/Padiet.jpg", 
+    image: "/images/Padiet.jpg",
     title: "Chief Deng Mathiang",
     year: "1924–1960",
-    description: "First clan leader who guided the community through post-colonial transitions."
+    description:
+      "First clan leader who guided the community through post-colonial transitions.",
   },
   {
     image: "/images/Duk.jpg",
     title: "Chief MonyKuer",
     year: "1960–1987",
-    description: "Known for settling internal disputes and initiating farmland expansion."
+    description:
+      "Known for settling internal disputes and initiating farmland expansion.",
   },
   // Add more timeline events here
 ];

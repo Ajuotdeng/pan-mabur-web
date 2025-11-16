@@ -37,6 +37,8 @@ import MawutMalual from "./components/FamilyTree/Malual/MawutMalual";
 import CholMalual from "./components/FamilyTree/Malual/CholMalual";
 import MadukMalual from "./components/FamilyTree/Malual/MadukMalual";
 import MagotMalual from "./components/FamilyTree/Malual/MagotMalual";
+import AdauMalual from "./components/FamilyTree/Malual/AdauMalual";
+// import AkuolMalual from "./components/FamilyTree/Malual/AkuolMalual"; //
 import DengMalual from "./components/FamilyTree/Malual/DengMalual";
 import AkoiMalual from "./components/FamilyTree/Malual/AkoiMalual";
 
@@ -112,6 +114,10 @@ function Layout() {
           <Route
             path="/familytree/malual-mabur/maduk-malual"
             element={<MadukMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/adau-malual"
+            element={<AdauMalual />}
           />
           <Route
             path="/familytree/malual-mabur/magot-malual"

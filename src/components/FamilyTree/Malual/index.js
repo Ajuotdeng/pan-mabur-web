@@ -11,30 +11,34 @@ export default function MalualMaburMain() {
     { name: "Deng Malual", path: "deng-malual" },
     { name: "Magot Malual", path: "magot-malual" },
     { name: "Akoi Malual", path: "akoi-malual" },
+    { name: "Adau Malual", path: "adau-malual" },
+    // { name: "Akuol Malual", path: "akuol-malual" },
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center py-12 px-4">
+    <div className="flex flex-col items-center min-h-screen px-4 py-12 bg-gray-50">
       <div className="max-w-3xl text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-green-700 mb-4">
+        <h1 className="mb-4 font-serif text-4xl font-bold text-green-700 md:text-5xl">
           Descendants of Malual Mabur
         </h1>
-        <p className="text-gray-600 mb-8 text-sm md:text-base">
+        <p className="mb-8 font-serif text-sm text-gray-600 md:text-base">
           Explore the family branches of Malual Mabur below to view their
           descendants.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2">
           {sons.map((son) => (
             <Link
               key={son.name}
               to={`/familytree/malual-mabur/${son.path}`}
-              className="block p-6 bg-white rounded-lg shadow hover:shadow-lg border border-gray-200 transition-transform transform hover:-translate-y-1"
+              className="block p-6 transition-transform transform bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg hover:-translate-y-1"
             >
-              <h2 className="text-xl font-semibold text-green-800">
+              <h2 className="font-serif text-xl font-semibold text-green-800">
                 {son.name}
               </h2>
-              <p className="text-gray-500 mt-2 text-sm">View this branch</p>
+              <p className="mt-2 font-serif text-sm text-gray-500">
+                View this branch
+              </p>
             </Link>
           ))}
         </div>
@@ -42,7 +46,7 @@ export default function MalualMaburMain() {
         <div className="mt-10">
           <Link
             to="/familytree"
-            className="inline-block px-4 py-2 bg-green-700 text-white rounded-md hover:bg-green-800 transition-colors"
+            className="inline-block px-4 py-2 font-serif text-white transition-colors bg-green-700 rounded-md hover:bg-green-800"
           >
             ← Back to Mabur Ajuot
           </Link>

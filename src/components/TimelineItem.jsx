@@ -1,5 +1,4 @@
-import React from 'react';
-
+import React from "react";
 
 const TimelineItem = ({ image, title, year, description }) => {
   return (
