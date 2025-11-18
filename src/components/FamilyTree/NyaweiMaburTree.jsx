@@ -9,12 +9,7 @@ export default function NyaweiMaburTree() {
   const data = {
     name: "Nyawei Mabur",
     attributes: { title: "Daughter of Mabur Ajuot" },
-    children: [
-      { name: "Ater Nyawei" },
-      { name: "Kachuol Nyawei" },
-      
-   
-    ],
+    children: [{ name: "Ater Nyawei" }, { name: "Kachuol Nyawei" }],
   };
 
   useEffect(() => {
@@ -60,11 +55,19 @@ export default function NyaweiMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },
