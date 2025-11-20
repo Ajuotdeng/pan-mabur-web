@@ -9,7 +9,13 @@ export default function AkuolMaburTree() {
   const data = {
     name: "Akuol Mabur",
     attributes: { title: "Daughter of Mabur Ajuot" },
-    children: [{ name: "Thon Thuc" }],
+    children: [
+      { name: "Manyang Akuol" },
+      { name: "Chol Akuol" },
+      { name: "Aben Akuol" },
+      { name: "Maduk Akuol" },
+      { name: "Thon Akuol" },
+    ],
   };
 
   useEffect(() => {

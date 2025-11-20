@@ -9,12 +9,7 @@ export default function BolMaburTree() {
   const data = {
     name: "Bol Mabur",
     attributes: { title: "Son of Mabur Ajuot" },
-    children: [
-      { name: "Galuak Bol" },
-      { name: "..." },
-     
-    
-    ],
+    children: [{ name: "Galuak Bol" }, { name: "Nyareath Bol" }],
   };
 
   useEffect(() => {
@@ -26,7 +21,7 @@ export default function BolMaburTree() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 py-10 flex flex-col items-center">
+    <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       <div className="w-full max-w-5xl mb-4 text-sm text-gray-600">
         <Link to="/familytree" className="text-green-700 hover:underline">
           ← Back
@@ -35,10 +30,10 @@ export default function BolMaburTree() {
       </div>
 
       <div className="max-w-5xl mx-auto mb-6 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-green-700">
+        <h1 className="text-3xl font-bold text-green-700 md:text-4xl">
           Descendants of Bol Mabur
         </h1>
-        <p className="text-gray-600 mt-2 text-sm md:text-base">
+        <p className="mt-2 text-sm text-gray-600 md:text-base">
           Visual representation of Bol Mabur’s lineage.
         </p>
       </div>
@@ -60,11 +55,19 @@ export default function BolMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },

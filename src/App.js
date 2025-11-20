@@ -18,7 +18,6 @@ import BlogDetails from "./components/BlogDetails";
 // FamilyTree main and branches
 import RootTree from "./components/FamilyTree/RootTree";
 import DengMaburTree from "./components/FamilyTree/DengMaburTree";
-import MathiangMaburTree from "./components/FamilyTree/MathiangMaburTree";
 import BayakMaburTree from "./components/FamilyTree/BayakMaburTree";
 import AkuolMaburTree from "./components/FamilyTree/AkuolMaburTree";
 import AwanditMaburTree from "./components/FamilyTree/AwanditMaburTree";
@@ -34,13 +33,24 @@ import MalualMaburMain from "./components/FamilyTree/Malual";
 import MaburMalual from "./components/FamilyTree/Malual/MaburMalual";
 import MathiangMalual from "./components/FamilyTree/Malual/MathiangMalual";
 import MawutMalual from "./components/FamilyTree/Malual/MawutMalual";
+import AwanMalual from "./components/FamilyTree/Malual/AwanMalual";
 import CholMalual from "./components/FamilyTree/Malual/CholMalual";
 import MadukMalual from "./components/FamilyTree/Malual/MadukMalual";
 import MagotMalual from "./components/FamilyTree/Malual/MagotMalual";
 import AdauMalual from "./components/FamilyTree/Malual/AdauMalual";
-// import AkuolMalual from "./components/FamilyTree/Malual/AkuolMalual"; //
+//import AkuolMalual from "./components/FamilyTree/Malual/AkuolMalual"; //
+import NyakoangMalual from "./components/FamilyTree/Malual/NyakoangMalual"; //
+import NyandhierMalual from "./components/FamilyTree/Malual/NyandhierMalual"; //
 import DengMalual from "./components/FamilyTree/Malual/DengMalual";
 import AkoiMalual from "./components/FamilyTree/Malual/AkoiMalual";
+
+// Mathiang Mabur tree and his sons and daughters
+import MathiangMaburMain from "./components/FamilyTree/Mathiang";
+import DengMathiang from "./components/FamilyTree/Mathiang/DengMathiang";
+import YarMathiang from "./components/FamilyTree/Mathiang/YarMathiang";
+import AkolMathiang from "./components/FamilyTree/Mathiang/AkolMathiang";
+import DauMathiang from "./components/FamilyTree/Mathiang/DauMathiang";
+import TongMathiang from "./components/FamilyTree/Mathiang/TongMathiang";
 
 import "./index.css";
 
@@ -66,10 +76,7 @@ function Layout() {
           <Route path="/familytree" element={<RootTree />} />
 
           {/* Main family branches under Mabur Ajuot */}
-          <Route
-            path="/familytree/mathiang-mabur"
-            element={<MathiangMaburTree />}
-          />
+
           <Route path="/familytree/bayak-mabur" element={<BayakMaburTree />} />
           <Route path="/familytree/deng-mabur" element={<DengMaburTree />} />
           <Route path="/familytree/bol-mabur" element={<BolMaburTree />} />
@@ -108,6 +115,10 @@ function Layout() {
             element={<MawutMalual />}
           />
           <Route
+            path="/familytree/malual-mabur/awan-malual"
+            element={<AwanMalual />}
+          />
+          <Route
             path="/familytree/malual-mabur/chol-malual"
             element={<CholMalual />}
           />
@@ -130,6 +141,42 @@ function Layout() {
           <Route
             path="/familytree/malual-mabur/akoi-malual"
             element={<AkoiMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/nyakoang-malual"
+            element={<NyakoangMalual />}
+          />
+          <Route
+            path="/familytree/malual-mabur/nyandhier-malual"
+            element={<NyandhierMalual />}
+          />
+
+          {/* Mathiang Mabur and his descendants */}
+
+          <Route
+            path="/familytree/mathiang-mabur"
+            element={<MathiangMaburMain />}
+          />
+
+          <Route
+            path="/familytree/mathiang-mabur/deng-mathiang"
+            element={<DengMathiang />}
+          />
+          <Route
+            path="/familytree/mathiang-mabur/yar-mathiang"
+            element={<YarMathiang />}
+          />
+          <Route
+            path="/familytree/mathiang-mabur/akol-mathiang"
+            element={<AkolMathiang />}
+          />
+          <Route
+            path="/familytree/mathiang-mabur/dau-mathiang"
+            element={<DauMathiang />}
+          />
+          <Route
+            path="/familytree/mathiang-mabur/tong-mathiang"
+            element={<TongMathiang />}
           />
 
           {/* Fallback */}

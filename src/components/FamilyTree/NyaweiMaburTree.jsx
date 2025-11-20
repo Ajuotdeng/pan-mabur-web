@@ -9,7 +9,13 @@ export default function NyaweiMaburTree() {
   const data = {
     name: "Nyawei Mabur",
     attributes: { title: "Daughter of Mabur Ajuot" },
-    children: [{ name: "Ater Nyawei" }, { name: "Kachuol Nyawei" }],
+    children: [
+      { name: "Ater Nyawei" },
+      { name: "Nyanawuor Nyawei" },
+      { name: "Nyakong Nyawei" },
+      { name: "Machar Nyawei" },
+      { name: "Kachuol Nyawei" },
+    ],
   };
 
   useEffect(() => {

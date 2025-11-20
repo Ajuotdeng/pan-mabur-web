@@ -3,59 +3,55 @@ import Tree from "react-d3-tree";
 import { Link } from "react-router-dom";
 
 const data = {
-  name: "Deng Malual",
+  name: "Deng Mathiang",
   attributes: { title: "Grandson" },
   children: [
     {
-      name: "Achol Dau",
-      attributes: { title: "Wife of Deng Malual" },
+      name: "Awak Mayen Deng",
+      attributes: { title: "Wife of Deng Mathiang" },
       children: [
-        { name: "Malual Deng", attributes: { title: "Great Grandson" } },
-      ],
-    },
-    {
-      name: "Martha Nyabiel Kak",
-      attributes: { title: "Wife of Deng Malual" },
-      children: [
-        { name: "Awak Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Adhieu Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Malual Deng", attributes: { title: "Great Grandson" } },
-        { name: "Mathiang Deng", attributes: { title: "Great Grandson" } },
-        { name: "Bior Deng", attributes: { title: "Great Grandson" } },
-        { name: "Nyanman Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Kak Deng", attributes: { title: "Great Grandson" } },
+        { name: "Mabur Deng", attributes: { title: "Great Grandson" } },
         {
-          name: "Nyandhier Deng",
+          name: "Late Athor Deng",
           attributes: { title: "Great Granddaughter" },
         },
+        {
+          name: "Late Achok Deng",
+          attributes: { title: "Great Granddaughter" },
+        },
+        { name: "Yar Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Nyibol Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Nyantet Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
     {
-      name: "Nyanwut Chol Awuol",
-      attributes: { title: "Wife of Deng Malual" },
+      name: "Atoch Lem Kuany",
+      attributes: { title: "Wife of Deng Mathiang" },
       children: [
         { name: "Nyantet Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Mabur Deng", attributes: { title: "Great Grandson" } },
-        { name: "Akol Deng", attributes: { title: "Great Grandson" } },
-        { name: "Nyibol Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Angony Deng", attributes: { title: "Great Grandson" } },
-        { name: "Akon Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Awak Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Late Dau Deng", attributes: { title: "Great Grandson" } },
+        { name: "Ajok Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Akech Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Achuei Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
-
     {
-      name: "Amac wuor",
-      attributes: { title: "Wife of Deng Malual" },
+      name: "Amer Panom Atem",
+      attributes: { title: "Wife of Deng Mathiang" },
       children: [
-        { name: "Ajuot Deng", attributes: { title: "Great Grandson" } },
-        { name: "Akech Deng", attributes: { title: "Great Granddaughter" } },
+        {
+          name: "Late Mathiang Deng",
+          attributes: { title: "Great Granddaughter" },
+        },
+        { name: "Akech Deng", attributes: { title: "Great Grandson" } },
+        { name: "Aduk Deng", attributes: { title: "Great Grandson" } },
+        { name: "Ajok Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
   ],
 };
 
-export default function DengMalual() {
+export default function DengMathiang() {
   const treeRef = useRef(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -76,7 +72,7 @@ export default function DengMalual() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       <h1 className="mb-6 text-3xl font-bold text-green-700">
-        Descendants of Deng Malual
+        Descendants of Deng Mathiang
       </h1>
 
       <div
@@ -98,10 +94,10 @@ export default function DengMalual() {
 
       <div className="mt-6">
         <Link
-          to="/familytree/malual-mabur"
+          to="/familytree/mathiang-mabur"
           className="text-blue-600 hover:underline"
         >
-          Back to Malual Mabur
+          Back to Mathiang Mabur
         </Link>
       </div>
     </div>

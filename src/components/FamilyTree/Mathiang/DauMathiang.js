@@ -3,37 +3,21 @@ import Tree from "react-d3-tree";
 import { Link } from "react-router-dom";
 
 const data = {
-  name: "Chol Malual",
+  name: "Dau Mathiang",
   attributes: { title: "Grandson" },
   children: [
+    
     {
-      name: "Nyanyath Bol",
-      attributes: { title: "Wife of Chol Malual" },
       children: [
-        { name: "Awak Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Malual Chol", attributes: { title: "Great Grandson" } },
-        { name: "Ajok Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Nyantet Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Nyabel Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Mabur Chol", attributes: { title: "Great Grandson" } },
-        { name: "Athiei Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Atong Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Adau Chol", attributes: { title: "Great Granddaughter" } },
-        { name: "Deng Chol", attributes: { title: "Great Grandson" } },
-      ],
-    },
-    {
-      name: "Atong Alak Kuot",
-      attributes: { title: "Wife of Chol Malual" },
-      children: [
-        { name: "Athiei Chol", attributes: { title: "Great Grandson" } },
-        { name: "Mabur Chol", attributes: { title: "Great Grandson" } },
+        { name: "...", attributes: { title: "Great Granddaughter" } },
+       
+     
       ],
     },
   ],
 };
 
-export default function CholMalual() {
+export default function DauMathiang() {
   const treeRef = useRef(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -54,7 +38,7 @@ export default function CholMalual() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       <h1 className="mb-6 text-3xl font-bold text-green-700">
-        Descendants of Chol Malual
+        Descendants of Mathiang Mabur
       </h1>
 
       <div
@@ -76,10 +60,10 @@ export default function CholMalual() {
 
       <div className="mt-6">
         <Link
-          to="/familytree/malual-mabur"
+          to="/familytree/mathiang-mabur"
           className="text-blue-600 hover:underline"
         >
-          Back to Malual Mabur
+          Back to Mathiang Mabur
         </Link>
       </div>
     </div>

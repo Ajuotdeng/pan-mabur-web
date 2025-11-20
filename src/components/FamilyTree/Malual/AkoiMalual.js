@@ -7,7 +7,7 @@ const data = {
   attributes: { title: "Grandson" },
   children: [
     {
-      name: "Achol ",
+      name: "Achol Yak Aleer ",
       attributes: { title: "Wife of Akoi Malual" },
       children: [
         { name: "Nyantet Akoi", attributes: { title: "Great Grandson" } },
