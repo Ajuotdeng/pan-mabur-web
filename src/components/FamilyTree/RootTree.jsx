@@ -8,6 +8,7 @@ export default function RootTree() {
     { name: "Bayak Mabur", path: "bayak-mabur" },
     { name: "Deng Mabur", path: "deng-mabur" },
     { name: "Monykuer Mabur", path: "monykuer-mabur" },
+    { name: "Ajuot Mabur", path: "ajuot-mabur" },
     { name: "Bol Mabur", path: "bol-mabur" },
     { name: "Awandit Mabur", path: "awandit-mabur" },
     { name: "Awan Mabur", path: "awan-mabur" },

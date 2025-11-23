@@ -11,11 +11,13 @@ export default function AwanMaburTree() {
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
       { name: "Kuol Awan" },
-      { name: "Mabur Awan" },
-     
-    
+      { name: "Makaar Awan" },
+      { name: "Achol Awan" },
+      { name: "Nyachar Awan" },
+      { name: "Nyankiir Awan" },
+      { name: "Nyanawuor Awan" },
     ],
-  };  
+  };
 
   useEffect(() => {
     if (treeRef.current) {
@@ -60,11 +62,19 @@ export default function AwanMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },

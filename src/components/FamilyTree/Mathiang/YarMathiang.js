@@ -3,21 +3,21 @@ import Tree from "react-d3-tree";
 import { Link } from "react-router-dom";
 
 const data = {
-  name: "Awan Malual",
-  attributes: { title: "Grandson" },
+  name: "Yar Mathiang",
+  attributes: { title: "Granddaughter" },
   children: [
     
     {
       children: [
-        { name: "Nyaluth Awan", attributes: { title: "Great Granddaughter" } },
-        { name: "Makim Awan", attributes: { title: "Great Grandson" } },
+        { name: "...", attributes: { title: "Great Granddaughter" } },
+        
      
       ],
     },
   ],
 };
 
-export default function MagotMalual() {
+export default function YarMathiang() {
   const treeRef = useRef(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -38,7 +38,7 @@ export default function MagotMalual() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       <h1 className="mb-6 text-3xl font-bold text-green-700">
-        Descendants of Awan Malual 
+        Descendants of Mathiang Mabur
       </h1>
 
       <div
@@ -60,10 +60,10 @@ export default function MagotMalual() {
 
       <div className="mt-6">
         <Link
-          to="/familytree/malual-mabur"
+          to="/familytree/mathiang-mabur"
           className="text-blue-600 hover:underline"
         >
-          Back to Malual Mabur
+          Back to Mathiang Mabur
         </Link>
       </div>
     </div>

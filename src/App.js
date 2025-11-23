@@ -22,6 +22,7 @@ import BayakMaburTree from "./components/FamilyTree/BayakMaburTree";
 import AkuolMaburTree from "./components/FamilyTree/AkuolMaburTree";
 import AwanditMaburTree from "./components/FamilyTree/AwanditMaburTree";
 import AwanMaburTree from "./components/FamilyTree/AwanMaburTree";
+import AjuotMaburTree from "./components/FamilyTree/AjuotMaburTree";
 import BolMaburTree from "./components/FamilyTree/BolMaburTree";
 import MonykuerMaburTree from "./components/FamilyTree/MonykuerMaburTree";
 import NgorMaburTree from "./components/FamilyTree/NgorMaburTree";
@@ -79,6 +80,7 @@ function Layout() {
 
           <Route path="/familytree/bayak-mabur" element={<BayakMaburTree />} />
           <Route path="/familytree/deng-mabur" element={<DengMaburTree />} />
+          <Route path="/familytree/ajuot-mabur" element={<AjuotMaburTree />} />
           <Route path="/familytree/bol-mabur" element={<BolMaburTree />} />
           <Route path="/familytree/akuol-mabur" element={<AkuolMaburTree />} />
           <Route

@@ -10,6 +10,9 @@ export default function AwanMaburTree() {
     name: "Awan Mabur",
     attributes: { title: "Son of Mabur Ajuot" },
     children: [
+      { name: "Dual Awan" },
+      { name: "Nyakuiy Awan" },
+      { name: "Kuoldit Awan" },
       { name: "Abiel Awan" },
       { name: "Kuol Awan" },
       { name: "Chol Awan" },
@@ -60,11 +63,19 @@ export default function AwanMaburTree() {
               links: { stroke: "#4CAF50", strokeWidth: 2 },
               nodes: {
                 node: {
-                  circle: { fill: "#4CAF50", stroke: "#2e7d32", strokeWidth: 2 },
+                  circle: {
+                    fill: "#4CAF50",
+                    stroke: "#2e7d32",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333", fontWeight: 600 },
                 },
                 leafNode: {
-                  circle: { fill: "#81C784", stroke: "#388E3C", strokeWidth: 2 },
+                  circle: {
+                    fill: "#81C784",
+                    stroke: "#388E3C",
+                    strokeWidth: 2,
+                  },
                   name: { fill: "#333" },
                 },
               },

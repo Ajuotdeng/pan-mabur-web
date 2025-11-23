@@ -25,7 +25,7 @@ export default function MathiangMaburMain() {
           {sons.map((son) => (
             <Link
               key={son.name}
-              to={`/familytree/malual-mabur/${son.path}`}
+              to={`/familytree/mathiang-mabur/${son.path}`}
               className="block p-6 transition-transform transform bg-white border border-gray-200 rounded-lg shadow hover:shadow-lg hover:-translate-y-1"
             >
               <h2 className="font-serif text-xl font-semibold text-green-800">

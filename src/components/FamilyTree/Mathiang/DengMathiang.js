@@ -15,13 +15,6 @@ const data = {
           name: "Late Athor Deng",
           attributes: { title: "Great Granddaughter" },
         },
-        {
-          name: "Late Achok Deng",
-          attributes: { title: "Great Granddaughter" },
-        },
-        { name: "Yar Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Nyibol Deng", attributes: { title: "Great Granddaughter" } },
-        { name: "Nyantet Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
     {
@@ -31,7 +24,12 @@ const data = {
         { name: "Nyantet Deng", attributes: { title: "Great Granddaughter" } },
         { name: "Late Dau Deng", attributes: { title: "Great Grandson" } },
         { name: "Ajok Deng", attributes: { title: "Great Granddaughter" } },
+        {
+          name: "Late Achok Deng",
+          attributes: { title: "Great Granddaughter" },
+        },
         { name: "Akech Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Aduk Deng", attributes: { title: "Great Granddaughter" } },
         { name: "Achuei Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
@@ -41,11 +39,13 @@ const data = {
       children: [
         {
           name: "Late Mathiang Deng",
-          attributes: { title: "Great Granddaughter" },
+          attributes: { title: "Great Grandson" },
         },
-        { name: "Akech Deng", attributes: { title: "Great Grandson" } },
-        { name: "Aduk Deng", attributes: { title: "Great Grandson" } },
+        { name: "Akech Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Yar Deng", attributes: { title: "Great Granddaughter" } },
         { name: "Ajok Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Nyibol Deng", attributes: { title: "Great Granddaughter" } },
+        { name: "Nyantet Deng", attributes: { title: "Great Granddaughter" } },
       ],
     },
   ],
