@@ -6,18 +6,57 @@ const data = {
   name: "Awan Malual",
   attributes: { title: "Grandson" },
   children: [
-    
     {
+      name: "Nyaluth Awan",
+      attributes: { title: "Great Granddaughter" },
       children: [
-        { name: "Nyaluth Awan", attributes: { title: "Great Granddaughter" } },
-        { name: "Makim Awan", attributes: { title: "Great Grandson" } },
-     
+        {
+          name: ".",
+          attributes: { title: "Husband of Nyaluth" },
+          children: [
+            {
+              name: "Nyantet Nyaluth",
+              attributes: { title: "Great great Granddaughter" },
+            },
+            {
+              name: "Nyanwut Nyaluth",
+              attributes: { title: "Great great Granddaughter" },
+            },
+            {
+              name: "Nyanluak Nyaluth",
+              attributes: { title: "Great great Granddaughter" },
+            },
+            { name: "Guot Nyaluth", attributes: { title: "Great great Grandson" } },
+            { name: "Ayuel Nyaluth", attributes: { title: "Great great Grandson" } },
+          ],
+        },
+      ],
+    },
+
+    { name: "Galuak Awan", attributes: { title: "Great Grandson" } },
+
+    {
+      name: "Makim Awan",
+      attributes: { title: "Great Grandson" },
+      children: [
+        {
+          name: "Aweng Duop",
+          attributes: { title: "Wife of Makim" },
+          children: [
+            { name: "Chol Makim", attributes: { title: "Great great Grandson" } },
+            { name: "Mabur Makim", attributes: { title: "Great great Grandson" } },
+            {
+              name: "Nyantet Makim",
+              attributes: { title: "Great great Granddaughter" },
+            },
+          ],
+        },
       ],
     },
   ],
 };
 
-export default function MagotMalual() {
+export default function AwanMalual() {
   const treeRef = useRef(null);
   const [translate, setTranslate] = useState({ x: 0, y: 0 });
   const [zoom, setZoom] = useState(1);
@@ -38,7 +77,7 @@ export default function MagotMalual() {
   return (
     <div className="flex flex-col items-center min-h-screen px-4 py-10 bg-gray-50">
       <h1 className="mb-6 text-3xl font-bold text-green-700">
-        Descendants of Awan Malual 
+        Descendants of Awan Malual
       </h1>
 
       <div

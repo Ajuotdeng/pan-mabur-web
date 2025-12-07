@@ -17,7 +17,7 @@ export default function Navbar() {
           <img src={panmaburLogo} alt="Pan Mabur logo" className="w-9 h-9" />
           <span>Pan Mabur</span>
         </Link>
-
+ 
         {/* Mobile Menu Toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
