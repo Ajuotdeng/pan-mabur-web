@@ -41,8 +41,8 @@ export default function Navbar() {
           <Link to="/blogs" className="block hover:text-[#c45a2a]">
             Blogs
           </Link>
-          <Link to="/contact" className="block hover:text-[#c45a2a]">
-            Contact
+          <Link to="/family-album" className="block hover:text-[#c45a2a]">
+            FamilyAlbum
           </Link>
         </nav>
       </div>

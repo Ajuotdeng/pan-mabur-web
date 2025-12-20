@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-serif text-[#2b2b2b] bg-[#e8e5dc];
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-serif text-[#2b2b2b] bg-[#e8e5dc];
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-earth-100;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-earth-400;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border border-earth-200 rounded-xl shadow-lg transition-all duration-300 hover:shadow-xl;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 font-medium text-white rounded-lg shadow-md
+           bg-heritage-600 hover:bg-heritage-700 active:bg-heritage-800
+           transition-colors duration-200 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 font-medium bg-white text-heritage-700 rounded-lg shadow-sm
+           border border-heritage-300 hover:bg-heritage-50
+           transition-colors duration-200 hover:shadow-md
+           focus:outline-none focus:ring-2 focus:ring-heritage-500 focus:ring-offset-2;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .page-title {
+    @apply mb-6 text-4xl md:text-5xl font-bold font-display text-earth-900;
+  }
+
+  .page-subtitle {
+    @apply max-w-3xl mb-8 text-xl text-earth-600;
+  }
+
+  .media-card {
+    @apply card overflow-hidden cursor-pointer
+           transition-transform duration-300 hover:scale-[1.02];
+  }
 }

@@ -10,10 +10,12 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Blogs from "./components/Blogs";
-import Contact from "./components/Contact";
+import FamilyAlbum from "./components/FamilyAlbum";
 import Hero from "./components/Hero";
 import ScrollToTop from "./components/ScrollToTop";
 import BlogDetails from "./components/BlogDetails";
+
+
 
 // FamilyTree main and branches
 import RootTree from "./components/FamilyTree/RootTree";
@@ -71,7 +73,7 @@ function Layout() {
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/family-album" element={<FamilyAlbum />} />
 
           {/* FamilyTree Root */}
           <Route path="/familytree" element={<RootTree />} />
