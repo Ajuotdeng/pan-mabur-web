@@ -56,6 +56,11 @@
     @apply max-w-3xl mb-8 text-xl text-earth-600;
   }
 
+  .safe-map {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+
   .media-card {
     @apply card overflow-hidden cursor-pointer
            transition-transform duration-300 hover:scale-[1.02];
